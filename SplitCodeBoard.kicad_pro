@@ -634,6 +634,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -658,14 +666,6 @@
     [
       "c378a608-3a19-436a-8899-f56e18cd980d",
       "right"
-    ],
-    [
-      "b71ecf85-7ee7-49ac-8f2b-03dea68c627d",
-      "UnderKeyLED"
-    ],
-    [
-      "b71ecf85-7ee7-49ac-8f2b-03dea68c627d",
-      "UnderKeyLED"
     ]
   ],
   "text_variables": {}

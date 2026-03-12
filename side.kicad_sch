@@ -3474,16 +3474,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 48.26) (xy 97.79 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "358c6bad-69b7-49b3-8f1c-f35e4ab2d25c")
-	)
-	(wire
-		(pts
 			(xy 205.74 100.33) (xy 223.52 100.33)
 		)
 		(stroke
@@ -3631,16 +3621,6 @@
 			(type default)
 		)
 		(uuid "52dae9b3-8a0a-46ca-adb4-61e6d72d233b")
-	)
-	(wire
-		(pts
-			(xy 97.79 157.48) (xy 76.2 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53d0b319-7aee-40be-87ba-337a2378d790")
 	)
 	(wire
 		(pts
@@ -3964,16 +3944,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 48.26) (xy 97.79 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fc9662d-47fa-4d78-b485-7497b00ec45b")
-	)
-	(wire
-		(pts
 			(xy 142.24 163.83) (xy 142.24 151.13)
 		)
 		(stroke
@@ -4021,16 +3991,6 @@
 			(type default)
 		)
 		(uuid "abf9a5ea-ccaa-42ab-bd1e-fde6e8121eb9")
-	)
-	(wire
-		(pts
-			(xy 266.7 63.5) (xy 266.7 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b13f20e0-3ac6-4cf0-80d1-e615df8cb81c")
 	)
 	(wire
 		(pts
@@ -11514,58 +11474,6 @@
 				(path "/8e037d1a-38ef-4c72-8142-d24fba09340a/c378a608-3a19-436a-8899-f56e18cd980d"
 					(reference "SW52")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 241.3 63.5)
-		(size 38.1 52.07)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b71ecf85-7ee7-49ac-8f2b-03dea68c627d")
-		(property "Sheetname" "UnderKeyLED"
-			(at 241.3 62.7884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "underkeyled.kicad_sch"
-			(at 241.3 116.1546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "DIN12" input
-			(at 266.7 63.5 90)
-			(uuid "4ef15b69-22f8-418d-b7d8-5eb4a2bd1fa9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "SplitCodeBoard"
-				(path "/8e037d1a-38ef-4c72-8142-d24fba09340a/212c55d9-bd52-4ba0-a9c1-1485280a605d"
-					(page "4")
 				)
 			)
 		)
