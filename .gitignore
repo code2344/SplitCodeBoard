@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+
+# Node dependencies
+node_modules/
+
+# Local backups and generated archives
+SplitCodeBoard-backups/*.zip
+
+# ZMK local west workspace/cache
+zmk-config/.zmk/
