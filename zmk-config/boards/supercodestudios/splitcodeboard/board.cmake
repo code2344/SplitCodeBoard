@@ -1,5 +1,10 @@
-# This file was generated from a template. Edit it to match your keyboard.
-# See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#flash-and-debug-support
-# for more information.
+#############################################################################
+# Copyright (c) 2026 SuperCode Studios
+# https://scstudios.tech
+# SplitCodeBoard Version 1.0.0
+# Licence: GNU Affero General Public License v3.0 only (AGPL-3.0-only)
+# SPDX-License-Identifier: AGPL-3.0-only
+# Maintainer: SuperCode Studios
+#############################################################################
 
 include(${ZEPHYR_BASE}/boards/common/uf2.board.cmake)
