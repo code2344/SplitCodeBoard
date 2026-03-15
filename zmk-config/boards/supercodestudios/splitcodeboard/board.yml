@@ -1,12 +1,14 @@
-# This file was generated from a template. Edit it to match your keyboard.
-# See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html
-# for more instructions.
-
+#############################################################################
+# Copyright (c) 2026 SuperCode Studios
+# https://scstudios.tech
+# SplitCodeBoard Version 1.0.0
+# Licence:
+#############################################################################
 board:
   name: splitcodeboard
   vendor: supercodestudios
   socs:
-    - name: 
+    - name: nrf52840
 
 # If your board has multiple revisions, specify them here. See
 # https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#multiple-board-revisions

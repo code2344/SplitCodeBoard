@@ -1,0 +1,11 @@
+# SplitCodeBoard macropad default config
+
+# Enable GPIO
+CONFIG_GPIO=y
+
+# Use pinctrl
+CONFIG_PINCTRL=y
+
+# BLE-only output
+CONFIG_ZMK_BLE=y
+# CONFIG_ZMK_USB is not set

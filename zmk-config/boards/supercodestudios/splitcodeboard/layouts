@@ -1,0 +1,66 @@
+SplitCodeBoard layout and wiring notes
+
+Matrix overview
+- Left half: 5 rows x 6 cols
+- Right half: 5 rows x 6 cols
+- Main split total: 5 rows x 12 cols
+- Missing keys: use NONE (no physical switch)
+
+Diode and scan direction
+- Per-switch wiring pattern: COLx -> switch -> diode -> ROWy
+- ZMK diode-direction for this pattern: col2row
+
+ZMK sizing and offsets
+- rows = 5
+- columns = 12
+- right col-offset = 6
+- macropad col-offset = 12 (left + right)
+
+LEFT matrix (local 5x6)
+LEFT    COL0            COL1    COL2    COL3             COL4              COL5
+ROW0    ESC             1_EXCL  2_AT    3_HASH           4_DLLR            5_PCT
+ROW1    TAB             Q       W       E                R                 T
+ROW2    CAPSLOCK_MACRO  A       S       D                F                 G
+ROW3    LSHIFT          Z       X       C                V                 B
+ROW4    NONE            NONE    LCTRL   LALT             LGUI              SPACE
+
+RIGHT matrix (local 5x6)
+RIGHT   COL0    COL1    COL2    COL3    COL4    COL5
+ROW0    6_CARET 7_AMPS  8_ASTR  9_LPAR  0_RPAR  DEL
+ROW1    Y       U       I       O       P       BSLH_PIPE
+ROW2    H       J       K       L       SCLN_COLON ENTER
+ROW3    N       M       COMMA_LT DOT_GT  SLASH_QMARK APOS_DQUOTE
+ROW4    SPACE   RGUI    MINUS_UNDERSCORE EQUAL_PLUS NONE NONE
+
+Active key count
+- Left: 28 keys
+- Right: 28 keys
+- Main split total: 56 keys
+
+Transform/keymap rule
+- Include only physical keys in transform and keymap.
+- Do not include NONE positions.
+
+
+SDA and SCL refer to SDA and SCL on the MCP23017, SDA on the nrf52840 is P0.04 and SCL on the nrf52840 is P0.05 
+SDA and SCL are connected on right and left.
+
+COL0 > P0.03
+COL1 > P0.28
+COL2 > P0.29
+COL3 > GPB3
+COL4 > GPB4
+COL5 > P1.11
+ROW0 > P1.15
+ROW1 > P1.14
+ROW2 > P1.13
+ROW3 > P1.12
+ROW4 > P0.10
+
+Right rotary encoder wiring
+- A > GPB1
+- B > GPB2
+- S1 > GPB5
+- C is grounded
+- S2 is grounded
+

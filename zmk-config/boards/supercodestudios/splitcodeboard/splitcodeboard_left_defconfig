@@ -8,6 +8,12 @@ CONFIG_GPIO=y
 # Use pinctrl
 CONFIG_PINCTRL=y
 
+# Enable I2C for MCP23017 matrix expander
+CONFIG_I2C=y
+
+# Polling mode is the most reliable starting point with GPIO expanders
+CONFIG_ZMK_KSCAN_MATRIX_POLLING=y
+
 # Enable ZMK outputs
-# CONFIG_ZMK_BLE=y
-CONFIG_ZMK_USB=y
+CONFIG_ZMK_BLE=y
+# CONFIG_ZMK_USB is not set

@@ -18,12 +18,12 @@ features:
   - studio  # Remove this line if your keyboard will not support ZMK Studio
 
 outputs:
-  - usb
-#   - ble
+  - ble
 
 siblings:
   - splitcodeboard_left
   - splitcodeboard_right
+  - splitcodeboard_macropad
 # If your board has multiple revisions in its board.yml, create a matching list here:
 # revisions:
 #   - 2.0.0

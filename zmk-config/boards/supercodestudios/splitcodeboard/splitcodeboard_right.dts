@@ -5,16 +5,61 @@
 #include "splitcodeboard.dtsi"
 #include "splitcodeboard_right-pinctrl.dtsi"
 
+/ {
+    encoder_button: encoder_button {
+        compatible = "zmk,kscan-gpio-direct";
+        input-gpios = <&right_io 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    };
+
+    right_encoder: right_encoder {
+        compatible = "alps,ec11";
+        a-gpios = <&right_io 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&right_io 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "okay";
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&right_encoder>;
+        triggers-per-rotation = <20>;
+    };
+};
+
+&i2c0 {
+    status = "okay";
+
+    right_io: mcp23017@20 {
+        compatible = "microchip,mcp230xx";
+        status = "okay";
+        reg = <0x20>;
+        gpio-controller;
+        #gpio-cells = <2>;
+        ngpios = <16>;
+    };
+};
+
 &default_transform {
     // Set this to the number of columns on the left side.
-    col-offset = <2>;
+    col-offset = <6>;
 };
 
 &kscan {
-    // Replace these comments with the GPIO pins in the matrix for the right side.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
+    encoder_button_key {
+        kscan = <&encoder_button>;
+        row-offset = <4>;
+        col-offset = <10>;
+    };
+};
+
+&kscan_matrix {
+    // Right-half column wiring.
     col-gpios
-        = <&gpio0 0 GPIO_ACTIVE_HIGH>
-        , <&gpio0 0 GPIO_ACTIVE_HIGH>
+        = <&gpio0 3 GPIO_ACTIVE_HIGH>
+        , <&gpio0 28 GPIO_ACTIVE_HIGH>
+        , <&gpio0 29 GPIO_ACTIVE_HIGH>
+        , <&right_io 11 GPIO_ACTIVE_HIGH>
+        , <&right_io 12 GPIO_ACTIVE_HIGH>
+        , <&gpio1 11 GPIO_ACTIVE_HIGH>
         ;
 };

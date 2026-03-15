@@ -2,9 +2,9 @@
 # See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#write-kconfig-files
 # for more information.
 
-if BOARD_SPLITCODEBOARD_LEFT || BOARD_SPLITCODEBOARD_RIGHT
+if BOARD_SPLITCODEBOARD_LEFT || BOARD_SPLITCODEBOARD_RIGHT || BOARD_SPLITCODEBOARD_MACROPAD
 
 # Define any board-specific Kconfig options here.
 # If there are none, you may delete this file.
 
-endif # BOARD_SPLITCODEBOARD_LEFT || BOARD_SPLITCODEBOARD_RIGHT
+endif # BOARD_SPLITCODEBOARD_LEFT || BOARD_SPLITCODEBOARD_RIGHT || BOARD_SPLITCODEBOARD_MACROPAD

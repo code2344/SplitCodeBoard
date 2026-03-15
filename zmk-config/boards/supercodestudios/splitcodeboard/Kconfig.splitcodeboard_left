@@ -3,4 +3,4 @@
 # for more information.
 
 config BOARD_SPLITCODEBOARD_LEFT
-    select SOC_PART_NUMBER_ABCDEFGH
+    select SOC_NRF52840_QIAA

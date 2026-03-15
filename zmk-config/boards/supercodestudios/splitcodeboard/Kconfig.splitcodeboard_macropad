@@ -1,0 +1,5 @@
+# SplitCodeBoard macropad sibling
+# Uses nRF52840 (XIAO nRF52840)
+
+config BOARD_SPLITCODEBOARD_MACROPAD
+    select SOC_NRF52840_QIAA

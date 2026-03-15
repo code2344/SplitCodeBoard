@@ -18,3 +18,7 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: splitcodeboard_left
+  - board: splitcodeboard_right
+  - board: splitcodeboard_macropad
