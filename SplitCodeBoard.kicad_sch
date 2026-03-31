@@ -2287,16 +2287,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 76.2) (xy 72.39 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3159b01-c125-4d0c-8a50-7f9f5f0ef0d0")
-	)
-	(wire
-		(pts
 			(xy 80.01 60.96) (xy 80.01 76.2)
 		)
 		(stroke
@@ -2406,12 +2396,12 @@
 		(uuid "36e43fd2-a63c-46f3-90f4-5f9d25fe3697")
 	)
 	(label "BT_PIN"
-		(at 72.39 76.2 0)
+		(at 44.45 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "3ea52b5c-2d81-4ab0-97f3-40cc2aa6ec47")
 	)
